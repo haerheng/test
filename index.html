@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <title>clipping</title>
+</head>
+<body>
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/roughwin/IFE2017/fork" data-icon="octicon-repo-forked" data-style="mega" data-show-count="true" aria-label="Fork roughwin/IFE2017 on GitHub">Fork</a>
+        <a class="github-button" href="https://github.com/roughwin/IFE2017/issues" data-icon="octicon-issue-opened" data-style="mega" data-show-count="true" aria-label="Issue roughwin/IFE2017 on GitHub">Issue</a>
+        <a class="github-button" href="https://github.com/roughwin/IFE2017" data-icon="octicon-star" data-style="mega" data-show-count="true" aria-label="Star roughwin/IFE2017 on GitHub">Star</a>    <div class="img-clipping">
+        <h3>说明：</h3>
+        <p>鼠标点击图像某点，可扣去近似颜色的区域。精度调整可改变扣取范围</p>
+        <p>也可选取加载本地文件，可进行平移、缩放等操作</p>
+        <canvas id="hidden-canvas" style="display: none"></canvas>
+        <canvas class="display" width="600" height="400"></canvas>
+        <div>
+            <button class="zoomin">放大</button>
+            <button class="zoomout">缩小</button>
+            <button class="left">左移</button>
+            <button class="right">右移</button>
+            <button class="up">上移</button>
+            <button class="down">下移</button>
+            <button class="save">保存</button>
+        </div>
+            
+        <lable>精度调整：</lable><input id="precision" type="number">
+        <input type="file" id="file-picker">
+       
+    </div>
+    
+    
+    <script src="./clipping.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
